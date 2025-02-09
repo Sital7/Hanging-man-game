@@ -1,0 +1,124 @@
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  /* Main game container */
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  /* Game title */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ff5722;
+  }
+  
+  /* Hangman figure */
+  .figure {
+    margin: 20px auto;
+  }
+  
+  /* Word display */
+  .word {
+    font-size: 2rem;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .letter {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border-bottom: 3px solid #333;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .keyboard button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s;
+  }
+  
+  .keyboard button:hover {
+    background-color: #e68900;
+  }
+  
+  .keyboard button:disabled {
+    background-color: #ddd;
+    color: #999;
+    cursor: not-allowed;
+  }
+  
+  /* Popup */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .popup h2 {
+    font-size: 2rem;
+    color: #ff5722;
+  }
+  
+  .popup button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .popup button:hover {
+    background-color: #388e3c;
+  }
+  
+  .notification {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
