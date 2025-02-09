@@ -5,8 +5,9 @@ import Figure from "./components/Figure";
 import Popup from "./components/Popup";
 import Notification from "./components/Notification";
 import "./styles.css";
+import words from './word.json'
 
-const words = ["REACT", "JAVASCRIPT", "DEVELOPER", "PROGRAMMING"];
+
 const getRandomWord = () => words[Math.floor(Math.random() * words.length)];
 
 const App = () => {
